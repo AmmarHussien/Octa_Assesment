@@ -28,7 +28,6 @@ public class Main {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         goHome();
     }
-
     @BeforeMethod
     public void goHome(){
         welcomePage = new WelcomePage(driver);
@@ -36,7 +35,7 @@ public class Main {
     }
     @AfterClass
     public  void tearDown(){
-        //driver.quit();
+        driver.quit();
     }
     @AfterMethod
     public void recordFailure (ITestResult result) {

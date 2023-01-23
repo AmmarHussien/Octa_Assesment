@@ -10,7 +10,7 @@ public class SuccessfulLogin extends Main {
 
     @Test
     public void testSuccessfulLogin(){
-        LoginPage loginPage = welcomePage.Login();
+        LoginPage loginPage = welcomePage.login();
         loginPage.setUserId("mngr472826");
         loginPage.setPassword("apEqyre");
         loginPage.clickSubmit();

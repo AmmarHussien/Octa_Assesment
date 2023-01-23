@@ -10,7 +10,7 @@ public class resetButton extends Main {
 
     @Test
     public void TestResetButton(){
-        LoginPage loginPage = welcomePage.Login();
+        LoginPage loginPage = welcomePage.login();
         loginPage.setUserId("mngr47282");
         loginPage.setPassword("apEqyre");
         loginPage.clickReset();

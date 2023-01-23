@@ -20,11 +20,23 @@ public class LoginPage {
     public void setUserId(String userName) {
         driver.findElement(userId).sendKeys(userName);
     }
+    public String getUserID() {
+        return driver.findElement(userId).getText();
+    }
+    public String getUserNameValidationMassage(){
+        return driver.findElement(userIdValidation).getText();
+    }
     public void clickUserID() {
         driver.findElement(userId).click();
     }
     public void setPassword(String password) {
         driver.findElement(userPassword).sendKeys(password);
+    }
+    public String getUserPasswordValidationMassage(){
+        return driver.findElement(userPasswordValidation).getText();
+    }
+    public String getUserPassword() {
+        return driver.findElement(userPassword).getText();
     }
     public void clickSubmit() {
         driver.findElement(submitButton).click();
@@ -37,18 +49,6 @@ public class LoginPage {
     }
     public String getText(){
         return driver.findElement(homePageText).getText();
-    }
-    public String getUserID() {
-        return driver.findElement(userId).getText();
-    }
-    public String getUserPassword() {
-        return driver.findElement(userPassword).getText();
-    }
-    public String getUserNameValidationMassage(){
-        return driver.findElement(userIdValidation).getText();
-    }
-    public String getUserPasswordValidationMassage(){
-        return driver.findElement(userPasswordValidation).getText();
     }
     public void alert_Click(){
         driver.switchTo().alert().accept();

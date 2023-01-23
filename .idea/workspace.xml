@@ -4,21 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e51b73b4-3bcc-4972-b61a-a279ab415f38" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/login_page/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/welcome_page/WelcomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/login/resetButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/login/successfulLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/login/validationMassage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/login/wrongCredentials.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/main/Main.java" afterDir="false" />
+    <list default="true" id="e51b73b4-3bcc-4972-b61a-a279ab415f38" name="Changes" comment="Login Test">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/new_customer/NewCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/addNewCustomer/addAllDataCorrect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/addNewCustomer/addressTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/addNewCustomer/cityTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/addNewCustomer/dateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/addNewCustomer/emailTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/addNewCustomer/passwordTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/addNewCustomer/pinTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/addNewCustomer/resetButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/addNewCustomer/stateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/addNewCustomer/testMobilePhone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/addNewCustomer/userNameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/login_page/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/login_page/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/welcome_page/WelcomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/welcome_page/WelcomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/login/SuccessfulLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/login/SuccessfulLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/login/WrongCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/login/WrongCredentials.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/login/resetButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/login/resetButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/login/validationMassage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/login/validationMassage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +75,45 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/java" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="addNewCustomer" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG.login">
+  <component name="RunManager" selected="TestNG.emailTest.wrongEmailFormat">
+    <configuration name="addNewCustomer" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Octa_Assesment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="addNewCustomer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="addNewCustomer" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="emailTest.wrongEmailFormat" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Octa_Assesment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="addNewCustomer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="addNewCustomer" />
+      <option name="MAIN_CLASS_NAME" value="addNewCustomer.emailTest" />
+      <option name="METHOD_NAME" value="wrongEmailFormat" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="login" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Octa_Assesment" />
       <extension name="coverage">
@@ -87,17 +130,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="resetButton.TestResetButton" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testMobilePhone.testEmptyPhoneNumber" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Octa_Assesment" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="login.*" />
+          <option name="PATTERN" value="addNewCustomer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="login" />
-      <option name="MAIN_CLASS_NAME" value="login.resetButton" />
-      <option name="METHOD_NAME" value="TestResetButton" />
+      <option name="PACKAGE_NAME" value="addNewCustomer" />
+      <option name="MAIN_CLASS_NAME" value="addNewCustomer.testMobilePhone" />
+      <option name="METHOD_NAME" value="testEmptyPhoneNumber" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -105,52 +148,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="validationMassage" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testMobilePhone.testSpaceInPhoneNumber" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Octa_Assesment" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="login.*" />
+          <option name="PATTERN" value="addNewCustomer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="login" />
-      <option name="MAIN_CLASS_NAME" value="login.validationMassage" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="validationMassage.testPasswordIdValidationMessage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Octa_Assesment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="login.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="login" />
-      <option name="MAIN_CLASS_NAME" value="login.validationMassage" />
-      <option name="METHOD_NAME" value="testPasswordIdValidationMessage" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="validationMassage.testValidationMassage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Octa_Assesment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="login.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="login" />
-      <option name="MAIN_CLASS_NAME" value="login.validationMassage" />
-      <option name="METHOD_NAME" value="testValidationMassage" />
+      <option name="PACKAGE_NAME" value="addNewCustomer" />
+      <option name="MAIN_CLASS_NAME" value="addNewCustomer.testMobilePhone" />
+      <option name="METHOD_NAME" value="testSpaceInPhoneNumber" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -160,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.emailTest.wrongEmailFormat" />
+        <item itemvalue="TestNG.testMobilePhone.testSpaceInPhoneNumber" />
+        <item itemvalue="TestNG.testMobilePhone.testEmptyPhoneNumber" />
         <item itemvalue="TestNG.login" />
-        <item itemvalue="TestNG.resetButton.TestResetButton" />
-        <item itemvalue="TestNG.validationMassage.testValidationMassage" />
-        <item itemvalue="TestNG.validationMassage" />
-        <item itemvalue="TestNG.validationMassage.testPasswordIdValidationMessage" />
+        <item itemvalue="TestNG.addNewCustomer" />
       </list>
     </recent_temporary>
   </component>
@@ -176,8 +184,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674372721985</updated>
-      <workItem from="1674372723297" duration="5004000" />
+      <workItem from="1674372723297" duration="17993000" />
     </task>
+    <task id="LOCAL-00001" summary="Login Test">
+      <created>1674377869115</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674377869115</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Login Test">
+      <created>1674377877304</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674377877304</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,10 +211,26 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Login Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login Test" />
   </component>
 </project>

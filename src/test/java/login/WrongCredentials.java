@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class WrongCredentials extends Main {
     @Test
     public void testWrongPassword(){
-        LoginPage loginPage = welcomePage.Login();
+        LoginPage loginPage = welcomePage.login();
         loginPage.setUserId("mngr47282");
         loginPage.setPassword("apEqyre");
         loginPage.clickSubmit();
@@ -13,7 +13,7 @@ public class WrongCredentials extends Main {
     }
     @Test
     public void testWrongUsername() {
-        LoginPage loginPage = welcomePage.Login();
+        LoginPage loginPage = welcomePage.login();
         loginPage.setUserId("mngr472826");
         loginPage.setPassword("apEqyr");
         loginPage.clickSubmit();
@@ -21,7 +21,7 @@ public class WrongCredentials extends Main {
     }
     @Test
     public void testEmptyCredentials() {
-        LoginPage loginPage = welcomePage.Login();
+        LoginPage loginPage = welcomePage.login();
         loginPage.setUserId("");
         loginPage.setPassword("");
         loginPage.clickSubmit();

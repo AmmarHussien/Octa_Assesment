@@ -9,7 +9,7 @@ public class validationMassage extends Main {
 
     @Test
     public void testUserIdValidationMessage() {
-        LoginPage loginPage = welcomePage.Login();
+        LoginPage loginPage = welcomePage.login();
         loginPage.clickUserID();
         loginPage.setPassword("apEqyre");
         assertTrue(loginPage.getUserNameValidationMassage()
@@ -18,7 +18,7 @@ public class validationMassage extends Main {
     }
     @Test
     public void testPasswordIdValidationMessage() {
-        LoginPage loginPage = welcomePage.Login();
+        LoginPage loginPage = welcomePage.login();
         loginPage.clickPassword();
         loginPage.setUserId("test");
         assertTrue(loginPage.getUserPasswordValidationMassage()
@@ -27,7 +27,7 @@ public class validationMassage extends Main {
     }
     @Test
     public void testValidationMassage (){
-        LoginPage loginPage = welcomePage.Login();
+        LoginPage loginPage = welcomePage.login();
         loginPage.clickUserID();
         loginPage.clickPassword();
         loginPage.clickUserID();
