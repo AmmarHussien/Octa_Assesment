@@ -53,5 +53,8 @@ public class LoginPage {
     public void alert_Click(){
         driver.switchTo().alert().accept();
     }
+    public String getTextFromAlert(){
+        return driver.switchTo().alert().getText();
+    }
 
 }

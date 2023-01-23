@@ -1,6 +1,5 @@
 package org.example.new_customer;
 
-import org.example.welcome_page.WelcomePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -30,7 +29,6 @@ public class NewCustomer {
     private final By customerPasswordValidation = By.id("message18");
     private final By submitButton = By.name("sub");
     private final By resetButton = By.name("res");
-
 
     public void setCustomerName (String name) {
         driver.findElement(customerName).sendKeys(name);
@@ -138,6 +136,9 @@ public class NewCustomer {
     }
     public void clickResetButton() {
         driver.findElement(resetButton).click();
+    }
+    public String getTextFromAlert(){
+        return driver.switchTo().alert().getText();
     }
     public void alert_Click(){
         driver.switchTo().alert().accept();
