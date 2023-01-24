@@ -18,37 +18,38 @@ public class LoginPage {
     private final By homePageText = By.xpath("/html/body/table/tbody/tr/td/table/tbody/tr[2]/td/marquee");
 
     public void setUserId(String userName) {
-        driver.findElement(userId).sendKeys(userName);
+        sendKeys(userId , userName);
     }
     public String getUserID() {
-        return driver.findElement(userId).getText();
+        return getTexts(userId);
     }
     public String getUserNameValidationMassage(){
-        return driver.findElement(userIdValidation).getText();
+        return getTexts(userIdValidation);
     }
     public void clickUserID() {
-        driver.findElement(userId).click();
+        click(userId);
     }
     public void setPassword(String password) {
-        driver.findElement(userPassword).sendKeys(password);
+        sendKeys(userPassword , password);
     }
     public String getUserPasswordValidationMassage(){
-        return driver.findElement(userPasswordValidation).getText();
+        return getTexts(userPasswordValidation);
     }
     public String getUserPassword() {
-        return driver.findElement(userPassword).getText();
+        return getTexts(userPassword);
     }
     public void clickSubmit() {
-        driver.findElement(submitButton).click();
+        click(submitButton);
     }
     public void clickPassword() {
-        driver.findElement(userPassword).click();
+        click(userPassword);
     }
     public void clickReset() {
-        driver.findElement(resetButton).click();
+        click(resetButton);
     }
     public String getText(){
-        return driver.findElement(homePageText).getText();
+        //return driver.findElement(homePageText).getText();
+        return getTexts(homePageText);
     }
     public void alert_Click(){
         driver.switchTo().alert().accept();
@@ -57,4 +58,16 @@ public class LoginPage {
         return driver.switchTo().alert().getText();
     }
 
+
+
+
+    public void click (By clicks) {
+        driver.findElement(clicks).click();
+    }
+    public void sendKeys (By element, String sendKey) {
+        driver.findElement(element).sendKeys(sendKey);
+    }
+    public String getTexts (By element) {
+        return driver.findElement(element).getText();
+    }
 }

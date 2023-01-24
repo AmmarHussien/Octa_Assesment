@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e51b73b4-3bcc-4972-b61a-a279ab415f38" name="Changes" comment="New Customer">
-      <change afterPath="$PROJECT_DIR$/src/test/java/addNewCustomer/submitWithNoData.java" afterDir="false" />
+    <list default="true" id="e51b73b4-3bcc-4972-b61a-a279ab415f38" name="Changes" comment="Add new test and enhance some test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/login_page/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/login_page/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/new_customer/NewCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/new_customer/NewCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/login/WrongCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/login/WrongCredentials.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,20 +40,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/ammarhussien/Desktop/java/Octa_Assesment/src/test/java",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ammarhussien/Desktop/java/Octa_Assesment/src/test/java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/java" />
@@ -64,8 +62,8 @@
       <recent name="addNewCustomer" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.&lt;default&gt;">
-    <configuration name="WrongCredentials" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.addAllDataCorrect">
+    <configuration name="SuccessfulLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Octa_Assesment" />
       <extension name="coverage">
         <pattern>
@@ -74,7 +72,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="login" />
-      <option name="MAIN_CLASS_NAME" value="login.WrongCredentials" />
+      <option name="MAIN_CLASS_NAME" value="login.SuccessfulLogin" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -82,17 +80,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="&lt;default&gt;" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Octa_Assesment" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="addAllDataCorrect.AllDataIsCorrect" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="addAllDataCorrect" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Octa_Assesment" />
       <extension name="coverage">
         <pattern>
@@ -102,8 +90,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="addNewCustomer" />
       <option name="MAIN_CLASS_NAME" value="addNewCustomer.addAllDataCorrect" />
-      <option name="METHOD_NAME" value="AllDataIsCorrect" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -126,18 +113,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="submitWithNoData.clickSubmitWithNoData" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="login" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Octa_Assesment" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="addNewCustomer.*" />
+          <option name="PATTERN" value="login.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="addNewCustomer" />
-      <option name="MAIN_CLASS_NAME" value="addNewCustomer.submitWithNoData" />
-      <option name="METHOD_NAME" value="clickSubmitWithNoData" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="login" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="resetButton" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Octa_Assesment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="login" />
+      <option name="MAIN_CLASS_NAME" value="login.resetButton" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -146,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.&lt;default&gt;" />
-        <item itemvalue="TestNG.WrongCredentials" />
-        <item itemvalue="TestNG.submitWithNoData.clickSubmitWithNoData" />
+        <item itemvalue="TestNG.addAllDataCorrect" />
         <item itemvalue="TestNG.addNewCustomer" />
-        <item itemvalue="TestNG.addAllDataCorrect.AllDataIsCorrect" />
+        <item itemvalue="TestNG.login" />
+        <item itemvalue="TestNG.resetButton" />
+        <item itemvalue="TestNG.SuccessfulLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +164,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674372721985</updated>
-      <workItem from="1674372723297" duration="22578000" />
+      <workItem from="1674372723297" duration="23991000" />
+      <workItem from="1674544442248" duration="4249000" />
     </task>
     <task id="LOCAL-00001" summary="Login Test">
       <created>1674377869115</created>
@@ -185,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674435357138</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add new test and enhance some test">
+      <created>1674505398959</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674505398959</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +227,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Login Test" />
     <MESSAGE value="New Customer" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Customer" />
+    <MESSAGE value="Add new test and enhance some test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new test and enhance some test" />
   </component>
 </project>

@@ -31,13 +31,13 @@ public class NewCustomer {
     private final By resetButton = By.name("res");
 
     public void setCustomerName (String name) {
-        driver.findElement(customerName).sendKeys(name);
+        sendKeys(customerName,name);
     }
     public String getCustomerNameValidation (){
-        return driver.findElement(customerNameValidation).getText();
+        return getTexts(customerNameValidation);
     }
     public String getCustomerName() {
-        return driver.findElement(customerName).getText();
+        return getTexts(customerName);
     }
     public void setCustomerGender (String gender) {
         int i;
@@ -45,103 +45,113 @@ public class NewCustomer {
         if(gender.equals("m")) {
             i = 1;
             genders = By.xpath("/html/body/table/tbody/tr/td/table/tbody/tr[5]/td[2]/input["+i+"]");
-            driver.findElement(genders).click();
+            click(genders);
         } else if (gender.equals("f")) {
             i = 2;
             genders = By.xpath("/html/body/table/tbody/tr/td/table/tbody/tr[5]/td[2]/input["+i+"]");
-            driver.findElement(genders).click();
+            click(genders);
         }
     }
     public void setCustomerDateOfBirth (String date) {
-        driver.findElement(dateOfBirth).sendKeys(date);
+        sendKeys(dateOfBirth,date);
     }
     public String getCustomerDateOfBirthValidation () {
-        return driver.findElement(customerDateOfBirthValidation).getText();
+        return getTexts(customerDateOfBirthValidation);
     }
     public String getCustomerDateOfBirth() {
-        return driver.findElement(customerDateOfBirthValidation).getText();
+        return getTexts(customerDateOfBirthValidation);
     }
     public void setCustomerAddress (String address) {
-        driver.findElement(customerAddress).sendKeys(address);
+        sendKeys(customerAddress,address);
     }
     public String getCustomerAddressValidation () {
-        return driver.findElement(customerAddressValidation).getText();
+        return getTexts(customerAddressValidation);
     }
     public String getCustomerAddress() {
-        return driver.findElement(customerAddress).getText();
+        return getTexts(customerAddress);
     }
 
     public void setCustomerCity (String city) {
-        driver.findElement(customerCity).sendKeys(city);
+        sendKeys(customerCity,city);
     }
     public String getCustomerCityValidation () {
-        return driver.findElement(customerCityValidation).getText();
+        return getTexts(customerCityValidation);
     }
     public String getCustomerCity() {
-        return driver.findElement(customerCity).getText();
+        return getTexts(customerCity);
     }
 
     public void setCustomerState(String state) {
-        driver.findElement(customerState).sendKeys(state);
+        sendKeys(customerState , state);
     }
     public String getCustomerStateValidation () {
-        return driver.findElement(customerStateValidation).getText();
+        return getTexts(customerStateValidation);
     }
     public String getCustomerState() {
-        return driver.findElement(customerState).getText();
+        return getTexts(customerState);
     }
 
     public void setCustomerPIN(String pin) {
-        driver.findElement(customerPIN).sendKeys(pin);
+        sendKeys(customerPIN,pin);
     }
     public String getCustomerPinValidation () {
-        return driver.findElement(customerPINValidation).getText();
+        return getTexts(customerPINValidation);
     }
     public String getCustomerPIN() {
-        return driver.findElement(customerPIN).getText();
+        return getTexts(customerPIN);
     }
 
     public void setCustomerPhoneNumber(String number) {
-        driver.findElement(customerPhoneNumber).sendKeys(number);
+        sendKeys(customerPhoneNumber,number);
     }
     public String getCustomerPhoneValidation () {
-        return driver.findElement(customerPhoneNumberValidation).getText();
+        return getTexts(customerPhoneNumberValidation);
     }
     public String getCustomerPhoneNumber() {
-        return driver.findElement(customerPhoneNumber).getText();
+        return getTexts(customerPhoneNumber);
     }
 
     public void setCustomerEmail(String email) {
-        driver.findElement(customerEmail).sendKeys(email);
+        sendKeys(customerEmail,email);
     }
     public String getCustomerEmailValidation () {
-        return driver.findElement(customerEmailValidation).getText();
+        return getTexts(customerEmailValidation);
     }
     public String getCustomerEmail() {
-        return driver.findElement(customerEmail).getText();
+        return getTexts(customerEmail);
     }
 
     public void setCustomerPassword(String password) {
-        driver.findElement(customerPassword).sendKeys(password);
+        sendKeys(customerPassword,password);
     }
     public String getCustomerPasswordValidation () {
-        return driver.findElement(customerPasswordValidation).getText();
+        return getTexts(customerPasswordValidation);
     }
     public String getCustomerPassword() {
-        return driver.findElement(customerPassword).getText();
+        return getTexts(customerPassword);
     }
 
     public void clickSubmitButton() {
-        driver.findElement(submitButton).click();
+        click(submitButton);
     }
     public void clickResetButton() {
-        driver.findElement(resetButton).click();
+        click(resetButton);
     }
     public String getTextFromAlert(){
         return driver.switchTo().alert().getText();
     }
     public void alert_Click(){
         driver.switchTo().alert().accept();
+    }
+
+    public void click (By clicks) {
+        driver.findElement(clicks).click();
+    }
+    public void sendKeys (By element, String sendKey) {
+        driver.findElement(element).sendKeys(sendKey);
+    }
+    public String getTexts (By element) {
+        return driver.findElement(element).getText();
     }
 }
 
